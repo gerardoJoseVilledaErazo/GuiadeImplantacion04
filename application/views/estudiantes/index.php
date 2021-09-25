@@ -26,6 +26,7 @@
                     <th>Usuario</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
+                    <th>Carrera</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -37,6 +38,7 @@
                         <td><?php echo $item->usuario; ?></td>
                         <td><?php echo $item->nombre; ?></td>
                         <td><?php echo $item->apellido; ?></td>
+                        <td><?php echo $item->idcarrera; ?></td>
                         <td>
                             <a href="<?= site_url('estudiantes/modificar/' . $item->idestudiante) ?>">Modificar</a>
                             <a href="<?= site_url('estudiantes/eliminar/' . $item->idestudiante) ?>" 
